@@ -1,0 +1,15 @@
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\obj\Debug\net6.0\JuraganMobil.csproj.AssemblyReference.cache
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\obj\Debug\net6.0\JuraganMobil.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\obj\Debug\net6.0\JuraganMobil.AssemblyInfoInputs.cache
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\obj\Debug\net6.0\JuraganMobil.AssemblyInfo.cs
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\obj\Debug\net6.0\JuraganMobil.csproj.CoreCompileInputs.cache
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\bin\Debug\net6.0\JuraganMobil.exe
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\bin\Debug\net6.0\JuraganMobil.deps.json
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\bin\Debug\net6.0\JuraganMobil.runtimeconfig.json
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\bin\Debug\net6.0\JuraganMobil.dll
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\bin\Debug\net6.0\JuraganMobil.pdb
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\obj\Debug\net6.0\JuraganMobil.dll
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\obj\Debug\net6.0\refint\JuraganMobil.dll
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\obj\Debug\net6.0\JuraganMobil.pdb
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\obj\Debug\net6.0\JuraganMobil.genruntimeconfig.cache
+D:\C#_PROJECTS\JuraganMobil\JuraganMobil\obj\Debug\net6.0\ref\JuraganMobil.dll
