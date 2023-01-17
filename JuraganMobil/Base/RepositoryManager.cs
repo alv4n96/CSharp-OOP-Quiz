@@ -1,6 +1,7 @@
 ﻿using JuraganMobil.Collection;
 using JuraganMobil.Model;
 using JuraganMobil.Repository;
+using JuraganMobil.Repository.SUV;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace JuraganMobil.Base
     internal class RepositoryManager : IRepositoryManager
     {
         private ISummary? _masterRepository;
+        private ISUVRepository? _sUVRepository;
+
         private IVehiclesCollection? _vehiclesCollection;
 
 
@@ -33,6 +36,13 @@ namespace JuraganMobil.Base
             } 
         }
 
-        
+        public ISUVRepository SUV
+        {
+            get
+            {
+                _sUVRepository ??= new SUVRepository(_vehiclesCollection);
+                return _sUVRepository;
+            }
+        }
     }
 }

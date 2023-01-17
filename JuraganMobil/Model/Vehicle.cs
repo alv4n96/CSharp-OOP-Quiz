@@ -16,7 +16,7 @@ namespace JuraganMobil.Model
         private DateTime transactionDate;
         private decimal total;
 
-        protected string NoPolice { get => noPolice; set => noPolice = value; }
+        public string NoPolice { get => noPolice; set => noPolice = value; }
         protected int Year { get => year; set => year = value; }
         protected decimal Price { get => price; set => price = value; }
         protected decimal? Tax { get => tax; set => tax = value; }

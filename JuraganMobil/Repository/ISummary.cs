@@ -11,7 +11,6 @@ namespace JuraganMobil.Repository
     {
         int GetTotalVehicles();
         int GetTotalVehicles(string type);
-
         decimal GetTotalIncomeVehicle();
         decimal GetTotalIncomeVehicle(string type);
 

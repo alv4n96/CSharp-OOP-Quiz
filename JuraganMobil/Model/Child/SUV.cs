@@ -22,7 +22,6 @@ namespace JuraganMobil.Model.Child
 
         public decimal Rent { get => _rent; set => _rent = value; }
         public decimal Driver { get => _driver; set => _driver = value; }
-        
         public new decimal Total { get => base.Total; set => base.Total = value; }
 
         public override string? ToString()
