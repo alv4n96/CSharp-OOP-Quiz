@@ -32,19 +32,18 @@ namespace JuraganMobil.Repository.SUV
 
         public Vehicle GetSUV(string noPol)
         {
-            Vehicle? res = _data[1];
+            object res = _data.FetchAll().First();
             //Try ReadById
             foreach (var item in (List<Vehicle>)_data)
             {
                 if (item.NoPolice == noPol)
                 {
                     res = item;
-                    return res;
                 }
                 else res = null;
             }
 
-            return res;
+            return (Vehicle)res;
         }
 
         //    //Try Create

@@ -22,8 +22,11 @@ internal class Program
 
         var run = new RepositoryManager(data);
 
-        //var read = run.SUV.GetSUV();
+        //var get = run.SUV.GetSUV();
         //read.ForEach(v => { Console.WriteLine(v); });
+
+        var getByNoPol = run.SUV.GetSUV("D 1001 UM");
+        Console.WriteLine(getByNoPol);
 
         ////Try ReadById
         //foreach (var item in resData)
