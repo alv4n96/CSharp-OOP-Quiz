@@ -23,7 +23,8 @@ namespace JuraganMobil.Repository
         {
             decimal res = 0M;
 
-            _data.FetchAll().ForEach(item => res += item.Total);
+            _data.FetchAll()
+                .ForEach(item => res += item.Total);
 
             return res;
         }
@@ -47,7 +48,7 @@ namespace JuraganMobil.Repository
         {
             var res = 0M;
 
-            foreach (var data in _data.FetchAll())
+            foreach (Vehicle data in _data.FetchAll())
                 if (data.GetType().Name == type)
                     res = res + data.Total;
 

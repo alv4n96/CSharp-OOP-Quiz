@@ -14,15 +14,21 @@ internal class Program
         //go.Run();
 
         //Try Read
-        var dataTemp = new VehiclesCollection().FetchAll();
-        var resData = dataTemp.Where(dataTemp => dataTemp.GetType().Name == "SUV").ToList();
+        //var dataTemp = new VehiclesCollection().FetchAll();
+        //var resData = dataTemp.Where(dataTemp => dataTemp.GetType().Name == "SUV").ToList();
 
-        resData.ForEach(x => Console.WriteLine(x));
+        //resData.ForEach(x => Console.WriteLine(x));
 
-        //Try ReadById
-        foreach (var item in resData)
-            if (item.NoPolice == "D 1001 UM")
-                Console.WriteLine(item);
+
+        var run = new RepositoryManager(data);
+
+        //var read = run.SUV.GetSUV();
+        //read.ForEach(v => { Console.WriteLine(v); });
+
+        ////Try ReadById
+        //foreach (var item in resData)
+        //    if (item.NoPolice == "D 1001 UM")
+        //        Console.WriteLine(item);
 
         //Try Create
 
