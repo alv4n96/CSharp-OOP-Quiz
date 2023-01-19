@@ -10,7 +10,7 @@ namespace JuraganMobil.OOP.Struct
     internal struct VehicleStruct
     {
         public string NoPoliceReg { get; set; }
-        public VehicleType? VehicleType { get; set; }
+        public VehicleType VehicleType { get; set; }
         public DateTime TransactionDate { get; set; }
         public double Rent { get; set; }
         public double DriverFree { get; set; }

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace JuraganMobil.OOP.Model.SubVehicle
 {
-    internal class Taxi : BaseVehicle
+    internal class OOPTaxi : BaseVehicle
     {
-        public Taxi(string? noPoliceReg, VehicleType vehicleTypeType, DateTime transactionDate, double rent, int order = 0, double orderPerKM = 0) : base(noPoliceReg, vehicleTypeType, transactionDate, rent)
+        public OOPTaxi(string? noPoliceReg, VehicleType vehicleTypeType, DateTime transactionDate, double rent, int order = 0, double orderPerKM = 0) : base(noPoliceReg, vehicleTypeType, transactionDate, rent)
         {
             Order = order;
             OrderPerKM = orderPerKM;

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace JuraganMobil.OOP.Model.SubVehicle
 {
-    internal class PrivateJet : BaseVehicle
+    internal class OOPPrivateJet : BaseVehicle
     {
-        public PrivateJet(string? noPoliceReg, VehicleType vehicleTypeType, DateTime transactionDate, double rent, double orderPerHours = 0) : base(noPoliceReg, vehicleTypeType, transactionDate, rent)
+        public OOPPrivateJet(string? noPoliceReg, VehicleType vehicleTypeType, DateTime transactionDate, double rent, double orderPerHours = 0) : base(noPoliceReg, vehicleTypeType, transactionDate, rent)
         {
             OrderPerHours = orderPerHours;
         }
