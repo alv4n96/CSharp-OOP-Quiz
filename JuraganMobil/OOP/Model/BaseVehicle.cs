@@ -12,13 +12,13 @@ namespace JuraganMobil.OOP.Model
         public BaseVehicle(string? noPoliceReg, VehicleType vehicleTypeType, DateTime transactionDate, double rent)
         {
             NoPoliceReg = noPoliceReg;
-            VehicleTypeType = vehicleTypeType;
+            VehicleType = vehicleTypeType;
             TransactionDate = transactionDate;
             Rent = rent;
         }
 
         public string? NoPoliceReg { get; set; }
-        public VehicleType VehicleTypeType { get; set; }
+        public VehicleType VehicleType { get; set; }
         public string Year { get; set; }
         public double Price { get; set; }
         public DateTime TransactionDate { get; set; }  

@@ -15,6 +15,11 @@ namespace JuraganMobil.OOP.Model.SubVehicle
             OrderPerKM = orderPerKM;
         }
 
+        public override string? ToString()
+        {
+            return $"| Nopolice : {NoPoliceReg} \t | Type : {VehicleType} \t | DateTime : {TransactionDate.Date.ToString("dd-M-yyyy")} | Rent : {Rent} \t | Driver : {Order} | OrderPerKm : {OrderPerKM} |";
+        }
+
         public int Order { get; set; }
         public double OrderPerKM { get; set; }
     }

@@ -3,6 +3,7 @@ using JuraganMobil.Collection;
 using JuraganMobil.Console;
 using JuraganMobil.Model.Child;
 using JuraganMobil.OOP.Factory;
+using JuraganMobil.OOP.Model;
 using JuraganMobil.OOP.Struct;
 using System.Xml;
 
@@ -33,6 +34,21 @@ internal class Program
         var suv1 = _resultVehicle.CreateSUV(sUVHolder1);
 
         Console.WriteLine(suv1.ToString());
+
+
+        var sUVHolder2 = new VehicleRecord
+        {
+            NoPoliceReg = "D TAXI UM",
+            VehicleType = JuraganMobil.OOP.Enum.VehicleType.Taxi,
+            TransactionDate = DateTime.Now,
+            DriverFree = 100_000,
+            Rent = 50_000
+        };
+
+        var taxi1 = _resultVehicle.CrateTaxi(sUVHolder2);
+        Console.WriteLine(taxi1);
+
+        List<BaseVehicle> list = new() { suv1, taxi1 };
 
 
 

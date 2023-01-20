@@ -1,4 +1,5 @@
 ﻿using JuraganMobil.Model.Child;
+using JuraganMobil.OOP.Model;
 using JuraganMobil.OOP.Model.SubVehicle;
 using JuraganMobil.OOP.Struct;
 using System;
@@ -11,9 +12,19 @@ namespace JuraganMobil.OOP.Factory
 {
     internal class VehicleFactory : IVehicleFactory
     {
+        public OOPTaxi CrateTaxi(VehicleRecord vehicleRecord)
+        {
+            return new OOPTaxi(vehicleRecord.NoPoliceReg, vehicleRecord.VehicleType, vehicleRecord.TransactionDate, vehicleRecord.Rent);
+        }
+
         public OOPSUV CreateSUV(VehicleStruct vehicleStruct)
         {
             return new OOPSUV(vehicleStruct.NoPoliceReg, vehicleStruct.VehicleType, vehicleStruct.TransactionDate, vehicleStruct.Rent);
+        }
+
+        public void DisplayVehicle<T>(List<T> listVehicle)
+        {
+            listVehicle.ForEach(x => System.Console.WriteLine(x));
         }
     }
 }
