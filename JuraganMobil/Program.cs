@@ -51,10 +51,27 @@ internal class Program
 
         List<BaseVehicle> list = new() { suv1, taxi1 };
 
-        var getResultTaxi = _resultVehicle.GetTotalVehicle(list, VehicleType.PrivateJet);
+        var getResultAllVehicle = _resultVehicle.GetTotalVehicle(list, VehicleType.ALL);
         Console.WriteLine(getResultTaxi);
 
+        var minTotalIncome = list.Min(x => x.Total);
+        var maxTotalIncome = list.Max(x => x.Total);
+        Console.WriteLine($"Total Vehicle : {getResultAllVehicle}");
+        Console.WriteLine($"Min Total Income : {minTotalIncome}, Max Total Income : {maxTotalIncome}");
 
+        var query = list.Where(x => x.Total > minTotalIncome && x.Total < maxTotalIncome).Select(vh =>
+            new
+            {
+                NoPolisi = vh.NoPoliceReg,
+                TahunBeli = vh.Year,
+                TotalIncome = vh.Total
+            }
+        );
+
+        foreach (var item in query)
+        {
+            Console.WriteLine(item);
+        }
 
         //Try Read
         //var dataTemp = new VehiclesCollection().FetchAll();

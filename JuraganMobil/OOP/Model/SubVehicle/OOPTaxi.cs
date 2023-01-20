@@ -13,6 +13,7 @@ namespace JuraganMobil.OOP.Model.SubVehicle
         {
             Order = order;
             OrderPerKM = orderPerKM;
+            Total = (order * orderPerKM) + rent;
         }
 
         public override string? ToString()
@@ -22,5 +23,7 @@ namespace JuraganMobil.OOP.Model.SubVehicle
 
         public int Order { get; set; }
         public double OrderPerKM { get; set; }
+        
+        public double Total { get; set; }
     }
 }

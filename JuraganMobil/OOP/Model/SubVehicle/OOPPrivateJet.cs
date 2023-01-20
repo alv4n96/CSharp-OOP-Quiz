@@ -12,8 +12,10 @@ namespace JuraganMobil.OOP.Model.SubVehicle
         public OOPPrivateJet(string? noPoliceReg, VehicleType vehicleTypeType, DateTime transactionDate, double rent, double orderPerHours = 0) : base(noPoliceReg, vehicleTypeType, transactionDate, rent)
         {
             OrderPerHours = orderPerHours;
+            Total = rent + orderPerHours;
         }
 
         public double OrderPerHours { get; set; }
+        public double Total { get; set; }
     }
 }

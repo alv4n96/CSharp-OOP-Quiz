@@ -23,5 +23,6 @@ namespace JuraganMobil.OOP.Model
         public double Price { get; set; }
         public DateTime TransactionDate { get; set; }  
         public double Rent { get; set; }   
+        public double Total { get; set; }
     }
 }

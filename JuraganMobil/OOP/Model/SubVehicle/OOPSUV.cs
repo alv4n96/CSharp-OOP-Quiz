@@ -13,9 +13,12 @@ namespace JuraganMobil.OOP.Model.SubVehicle
         public OOPSUV(string? noPoliceReg, VehicleType vehicleTypeType, DateTime transactionDate, double rent, double driver = 0) : base(noPoliceReg, vehicleTypeType, transactionDate, rent)
         {
             Driver = driver;
+            Total = driver + rent;
         }
 
         public double Driver { get; set; }
+
+        public double Total { get; set; }
 
         public override string? ToString()
         {
