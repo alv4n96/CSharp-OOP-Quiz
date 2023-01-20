@@ -36,7 +36,12 @@ namespace JuraganMobil.OOP.Factory
 
         public int GetTotalVehicle<T>(List<T> vehicles, VehicleType vehicleType)
         {
-            throw new NotImplementedException();
+            var res = 0;
+
+            if (vehicleType == VehicleType.ALL) res = vehicles.Count();
+            else res = vehicles.OfType<BaseVehicle>().Where(x => x.VehicleType == vehicleType).Count();
+
+            return res;
         }
     }
 }

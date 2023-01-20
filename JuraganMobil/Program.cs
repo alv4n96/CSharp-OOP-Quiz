@@ -2,6 +2,7 @@
 using JuraganMobil.Collection;
 using JuraganMobil.Console;
 using JuraganMobil.Model.Child;
+using JuraganMobil.OOP.Enum;
 using JuraganMobil.OOP.Factory;
 using JuraganMobil.OOP.Model;
 using JuraganMobil.OOP.Struct;
@@ -50,7 +51,8 @@ internal class Program
 
         List<BaseVehicle> list = new() { suv1, taxi1 };
 
-
+        var getResultTaxi = _resultVehicle.GetTotalVehicle(list, VehicleType.PrivateJet);
+        Console.WriteLine(getResultTaxi);
 
 
 
